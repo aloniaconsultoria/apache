@@ -8,13 +8,11 @@
 unless os.windows?
   describe user('root') do
     it { should exist }
-    skip 'This is an example test, replace with your own test.'
   end
 end
 
 describe port(80) do
   it { should be_listening }
-  skip 'This is an example test, replace with your own test.'
 end
 
 describe command ('curl localhost')do

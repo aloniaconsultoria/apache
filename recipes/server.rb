@@ -3,7 +3,11 @@ package 'httpd' do
 end
 
 file '/var/www/html/index.html' do
-	content "<h1> Hola Chef</> \n"
+	content "<h1> Hola Chef</> \n
+
+        <h2>ipaddress:#{node['ipaddress']}</h2>
+
+        "
 	action :create
 end	
 
